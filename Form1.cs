@@ -23,10 +23,10 @@ namespace UPv1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            double R = 1.0; // радиус окружности
             double x0 = 2.0; // x-координата центра окружности
-            double y0 = 2.0; // y-координата центра окружности
-            double distance = 2.0; // расстояние от оси Y к вертикальной прямой
+            double y0 = 0.0; // y-координата центра окружности
+            double R = 3.0; // радиус окружности
+            double distance = -2.0; // расстояние от оси Y к вертикальной прямой
             try
             {
                 R = double.Parse(this.textBox1.Text);
@@ -68,16 +68,6 @@ namespace UPv1
             //MessageBox.Show($"Площадь большого сегмента (методом Монте-Карло): {areaByMonteCarlo}");
 
             pictureBox1.Invalidate();
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -220,21 +210,13 @@ namespace UPv1
             return (double)leftArea / totalPoints * rectangleArea;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            double R = 2.0; // радиус окружности
-            double x0 = 1.0; // x-координата центра окружности
-            double y0 = 2.0; // y-координата центра окружности
-            double distance = 2.0; // расстояние от оси Y к вертикальной прямой
+            double x0 = 2.0; // x-координата центра окружности
+            double y0 = 0.0; // y-координата центра окружности
+            double R = 3.0; // радиус окружности
+            double distance = -2.0; // расстояние от оси Y к вертикальной прямой
             try
             {
                 R = double.Parse(this.textBox1.Text);
@@ -378,6 +360,13 @@ namespace UPv1
         {
             Form2 form = new Form2();
             form.Show();
+        }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+
         }
     }
 }
