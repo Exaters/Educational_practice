@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y7Y26ImAXWw=",
+  "dgSpecHash": "7pd7xYp0fEg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\short\\OneDrive\\Документы\\GitHub\\UPModul2\\UPv1.csproj",
+  "projectFilePath": "C:\\Users\\short\\OneDrive\\Документы\\GitHub\\Educational_practice\\UPv1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\short\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\short\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

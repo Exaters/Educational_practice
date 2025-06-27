@@ -226,10 +226,10 @@ namespace UPv1
             }
             catch (Exception)
             {
-                R = 2.0;
-                x0 = 1.0;
-                y0 = 2.0;
-                distance = 2.0;
+                x0 = 2.0;
+                y0 = 0.0;
+                R = 3.0;
+                distance = -2.0;
             }
 
             if (this.comboBox1.Text.Equals("Горизонтальная"))
