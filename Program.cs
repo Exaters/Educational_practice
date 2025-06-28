@@ -1,17 +1,24 @@
-namespace UPv1
+using Education_Practice;
+using System;
+using System.Threading;
+using System.Windows.Forms;
+
+namespace Education_practice
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            SplashScreen splash = new SplashScreen();
+            splash.Show();
+            Application.DoEvents(); // ќбновл€ем окно
+            Thread.Sleep(3000); // ∆дЄм 3 секунды
+            splash.Close();
+
+            Application.Run(new MainWindow());
         }
     }
 }
